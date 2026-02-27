@@ -19,7 +19,12 @@
                 </svg>
                 <span>AlumiFab</span>
             </div>
-            <ul class="nav-links">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -143,139 +148,74 @@
         <div class="container">
             <h2 class="section-title">Our Work Gallery</h2>
             
+            <!-- Admin Upload Section -->
+            <div class="admin-section">
+                <button class="admin-toggle-btn" id="adminToggleBtn">🔐 Admin Panel</button>
+                
+                <div class="admin-panel" id="adminPanel">
+                    <div class="admin-header">
+                        <h3>📸 Upload Images</h3>
+                        <button class="close-admin-btn" id="closeAdminBtn">&times;</button>
+                    </div>
+                    
+                    <div class="upload-form">
+                        <div class="form-group">
+                            <label for="categorySelect">Select Category:</label>
+                            <select id="categorySelect" required>
+                                <option value="">-- Choose Category --</option>
+                                <option value="doors">🚪 Doors</option>
+                                <option value="windows">🪟 Windows</option>
+                                <option value="wardrobe">🛁 Wardrobe</option>
+                                <option value="partition">🔲 Partitions</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="imageTitle">Image Title:</label>
+                            <input type="text" id="imageTitle" placeholder="e.g., Modern Sliding Door" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="imageDescription">Image Description:</label>
+                            <input type="text" id="imageDescription" placeholder="e.g., Premium aluminum with glass panels">
+                        </div>
+
+                        <div class="file-upload-area" id="fileUploadArea">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 2V32M2 28L24 6L46 28" stroke="#2D5016" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 38H40C42.2091 38 44 39.7909 44 42V42C44 44.2091 42.2091 46 40 46H8C5.79086 46 4 44.2091 4 42V42C4 39.7909 5.79086 38 8 38Z" stroke="#2D5016" stroke-width="2"/>
+                            </svg>
+                            <p>Click to upload or drag and drop</p>
+                            <p class="file-hint">PNG, JPG, GIF up to 10MB</p>
+                            <input type="file" id="imageInput" accept="image/*" multiple>
+                        </div>
+
+                        <div id="imagePreview" class="image-preview"></div>
+
+                        <button type="button" class="upload-btn" id="uploadBtn">Upload Images</button>
+                    </div>
+
+                    <div class="uploaded-stats">
+                        <p>Total Images: <strong id="totalImages">0</strong></p>
+                        <button type="button" class="clear-storage-btn" id="clearStorageBtn">Clear All Data</button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Gallery Filter -->
             <div class="gallery-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="doors">Doors</button>
-                <button class="filter-btn" data-filter="windows">Windows</button>
-                <button class="filter-btn" data-filter="wardrobe">Wardrobe</button>
-                <button class="filter-btn" data-filter="partition">Partitions</button>
+                <button class="filter-btn" data-filter="doors">🚪 Doors</button>
+                <button class="filter-btn" data-filter="windows">🪟 Windows</button>
+                <button class="filter-btn" data-filter="wardrobe">🛁 Wardrobe</button>
+                <button class="filter-btn" data-filter="partition">🔲 Partitions</button>
             </div>
 
             <!-- Gallery Grid -->
-            <div class="gallery-grid">
-                <!-- Doors Section -->
-                <div class="gallery-item" data-category="doors">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #6B5D52, #3A3430); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Modern Aluminum Doors</h4>
-                        <p>Contemporary sliding door system</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="doors">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #8B7B6F, #4A4440); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Entry Door Systems</h4>
-                        <p>Premium entrance door solutions</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="doors">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #7A6B5F, #3D3935); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Glass Aluminum Doors</h4>
-                        <p>Elegant glass and aluminum combination</p>
-                    </div>
-                </div>
-
-                <!-- Windows Section -->
-                <div class="gallery-item" data-category="windows">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #6B8A5A, #2D5016); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Casement Windows</h4>
-                        <p>Quality hinged window systems</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="windows">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #5A8C4E, #1F3A0B); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Sliding Windows</h4>
-                        <p>Smooth and modern sliding systems</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="windows">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #7A9A6A, #3A5B2A); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Thermal Windows</h4>
-                        <p>Energy-efficient window solutions</p>
-                    </div>
-                </div>
-
-                <!-- Wardrobe Section -->
-                <div class="gallery-item" data-category="wardrobe">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #A0826D, #6B5D52); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Sliding Wardrobe</h4>
-                        <p>Space-saving sliding door wardrobe</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="wardrobe">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #B5956B, #7A6B5F); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Custom Wardrobe Design</h4>
-                        <p>Tailored closet organization systems</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="wardrobe">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #9B7F6F, #5A4F48); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Walk-in Wardrobe</h4>
-                        <p>Premium walk-in closet solutions</p>
-                    </div>
-                </div>
-
-                <!-- Partition Section -->
-                <div class="gallery-item" data-category="partition">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #6B8A5A, #2D5016); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Office Partitions</h4>
-                        <p>Professional office divider systems</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="partition">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #5A8C4E, #1F3A0B); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Glass Partitions</h4>
-                        <p>Modern glass partition systems</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="partition">
-                    <div class="gallery-image">
-                        <div style="background: linear-gradient(135deg, #7A9A6A, #3A5B2A); width: 100%; height: 100%;"></div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h4>Room Dividers</h4>
-                        <p>Flexible space division solutions</p>
-                    </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images loaded dynamically via JavaScript -->
+                <div class="empty-state" id="emptyState">
+                    <p>No images uploaded yet. Visit the admin panel to add images.</p>
                 </div>
             </div>
         </div>
@@ -328,10 +268,10 @@
                         <div class="form-group">
                             <select id="projectType" required>
                                 <option value="">Select Project Type</option>
-                                <option value="Doors">Doors</option>
-                                <option value="Windows">Windows</option>
-                                <option value="Wardrobe">Wardrobe</option>
-                                <option value="Partition">Partition</option>
+                                <option value="Doors">🚪 Doors</option>
+                                <option value="Windows">🪟 Windows</option>
+                                <option value="Wardrobe">🛁 Wardrobe</option>
+                                <option value="Partition">🔲 Partition</option>
                                 <option value="Other">Other</option>
                             </select>
                         </div>
@@ -384,6 +324,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
 
     <script src="script.js"></script>
 </body>
