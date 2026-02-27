@@ -3,141 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlumiFab - Premium Aluminum Fabrication</title>
+    <title>AlumiFab - Professional Services</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <rect x="8" y="8" width="24" height="24" stroke="#2D5016" stroke-width="2" rx="2"/>
-                    <line x1="14" y1="8" x2="14" y2="32" stroke="#A0826D" stroke-width="2"/>
-                    <line x1="26" y1="8" x2="26" y2="32" stroke="#A0826D" stroke-width="2"/>
-                </svg>
-                <span>AlumiFab</span>
+            <div class="logo">AlumiFab</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="hero" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Premium Aluminum <span class="gradient-text">Fabrication Solutions</span></h1>
-            <p class="hero-subtitle">Crafting excellence with precision engineering and modern design</p>
+            <h1>Welcome to AlumiFab</h1>
+            <p>Premium Design & Fabrication Services</p>
             <button class="cta-button">Get Started</button>
         </div>
-        <div class="hero-animation">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="20" stroke="#2D5016" stroke-width="2"/>
-                            <path d="M18 24L22 28L30 20" stroke="#A0826D" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>Quality Assured</h3>
-                    <p>ISO certified processes with rigorous quality control at every stage</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="12" width="32" height="24" stroke="#2D5016" stroke-width="2" rx="2"/>
-                            <path d="M12 12V8M36 12V8" stroke="#A0826D" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Fast Delivery</h3>
-                    <p>Quick turnaround times without compromising on quality standards</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="20" stroke="#2D5016" stroke-width="2"/>
-                            <path d="M24 14V24L30 30" stroke="#A0826D" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>24/7 Support</h3>
-                    <p>Round-the-clock customer support for all your fabrication needs</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <path d="M10 24L18 32L38 12" stroke="#2D5016" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3>Custom Solutions</h3>
-                    <p>Tailored designs for your unique requirements and specifications</p>
-                </div>
-            </div>
-        </div>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
+            <h2>Our Services</h2>
             <div class="services-grid">
-                <div class="service-item" data-category="cutting">
-                    <div class="service-image"></div>
-                    <h3>CNC Cutting</h3>
-                    <p>Precision cutting with advanced CNC machinery for exact dimensions</p>
+                <div class="service-item">
+                    <h3>Design</h3>
+                    <p>Custom design solutions tailored to your needs</p>
                 </div>
-
-                <div class="service-item" data-category="welding">
-                    <div class="service-image"></div>
-                    <h3>Welding & Joining</h3>
-                    <p>Expert welding techniques for strong and durable connections</p>
+                <div class="service-item">
+                    <h3>Fabrication</h3>
+                    <p>High-quality fabrication with precision engineering</p>
                 </div>
-
-                <div class="service-item" data-category="forming">
-                    <div class="service-image"></div>
-                    <h3>Metal Forming</h3>
-                    <p>Complex forming operations for intricate designs and shapes</p>
-                </div>
-
-                <div class="service-item" data-category="finishing">
-                    <div class="service-image"></div>
-                    <h3>Finishing</h3>
-                    <p>Anodizing, powder coating, and polishing for perfect surfaces</p>
-                </div>
-
-                <div class="service-item" data-category="assembly">
-                    <div class="service-image"></div>
-                    <h3>Assembly</h3>
-                    <p>Complete assembly services with quality control verification</p>
-                </div>
-
-                <div class="service-item" data-category="design">
-                    <div class="service-image"></div>
-                    <h3>Design Consultation</h3>
-                    <p>Expert design guidance to optimize your project specifications</p>
+                <div class="service-item">
+                    <h3>Installation</h3>
+                    <p>Professional installation and support services</p>
                 </div>
             </div>
         </div>
@@ -146,168 +55,131 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">Our Work Gallery</h2>
+            <h2>Gallery</h2>
             
-            <!-- Admin Upload Section -->
-            <div class="admin-section">
-                <button class="admin-toggle-btn" id="adminToggleBtn">🔐 Admin Panel</button>
-                
-                <div class="admin-panel" id="adminPanel">
-                    <div class="admin-header">
-                        <h3>📸 Upload Images</h3>
-                        <button class="close-admin-btn" id="closeAdminBtn">&times;</button>
-                    </div>
-                    
-                    <div class="upload-form">
-                        <div class="form-group">
-                            <label for="categorySelect">Select Category:</label>
-                            <select id="categorySelect" required>
-                                <option value="">-- Choose Category --</option>
-                                <option value="doors">🚪 Doors</option>
-                                <option value="windows">🪟 Windows</option>
-                                <option value="wardrobe">🛁 Wardrobe</option>
-                                <option value="partition">🔲 Partitions</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="imageTitle">Image Title:</label>
-                            <input type="text" id="imageTitle" placeholder="e.g., Modern Sliding Door" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="imageDescription">Image Description:</label>
-                            <input type="text" id="imageDescription" placeholder="e.g., Premium aluminum with glass panels">
-                        </div>
-
-                        <div class="file-upload-area" id="fileUploadArea">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <path d="M24 2V32M2 28L24 6L46 28" stroke="#2D5016" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 38H40C42.2091 38 44 39.7909 44 42V42C44 44.2091 42.2091 46 40 46H8C5.79086 46 4 44.2091 4 42V42C4 39.7909 5.79086 38 8 38Z" stroke="#2D5016" stroke-width="2"/>
-                            </svg>
-                            <p>Click to upload or drag and drop</p>
-                            <p class="file-hint">PNG, JPG, GIF up to 10MB</p>
-                            <input type="file" id="imageInput" accept="image/*" multiple>
-                        </div>
-
-                        <div id="imagePreview" class="image-preview"></div>
-
-                        <button type="button" class="upload-btn" id="uploadBtn">Upload Images</button>
-                    </div>
-
-                    <div class="uploaded-stats">
-                        <p>Total Images: <strong id="totalImages">0</strong></p>
-                        <button type="button" class="clear-storage-btn" id="clearStorageBtn">Clear All Data</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Filter -->
-            <div class="gallery-filters">
+            <!-- Filter Buttons -->
+            <div class="filter-container">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="doors">🚪 Doors</button>
-                <button class="filter-btn" data-filter="windows">🪟 Windows</button>
-                <button class="filter-btn" data-filter="wardrobe">🛁 Wardrobe</button>
-                <button class="filter-btn" data-filter="partition">🔲 Partitions</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="fabrication">Fabrication</button>
+                <button class="filter-btn" data-filter="installation">Installation</button>
             </div>
 
-            <!-- Gallery Grid -->
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Images loaded dynamically via JavaScript -->
-                <div class="empty-state" id="emptyState">
-                    <p>No images uploaded yet. Visit the admin panel to add images.</p>
+            <!-- Gallery Items -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="design">
+                    <img src="https://via.placeholder.com/300x300?text=Design+1" alt="Design project">
+                    <div class="gallery-overlay">Design Project</div>
+                </div>
+                <div class="gallery-item" data-category="fabrication">
+                    <img src="https://via.placeholder.com/300x300?text=Fabrication+1" alt="Fabrication project">
+                    <div class="gallery-overlay">Fabrication Project</div>
+                </div>
+                <div class="gallery-item" data-category="installation">
+                    <img src="https://via.placeholder.com/300x300?text=Installation+1" alt="Installation project">
+                    <div class="gallery-overlay">Installation Project</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Image Upload Section -->
+    <section id="upload" class="image-upload-section">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About AlumiFab</h2>
-                    <p>With over 20 years of experience in aluminum fabrication, we have established ourselves as industry leaders in precision engineering and innovative solutions.</p>
-                    <p>Our state-of-the-art facility and skilled team ensure that every project meets the highest standards of quality and craftsmanship.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h4>500+</h4>
-                            <p>Projects Completed</p>
+            <h2>Upload Your Project Images</h2>
+            <p class="upload-subtitle">Share your project photos for our gallery and portfolio</p>
+            
+            <div class="upload-container">
+                <!-- Drag & Drop Zone -->
+                <div class="upload-zone" id="uploadZone">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <h3>Drop images here or click to upload</h3>
+                    <p>Supported formats: JPG, PNG, WebP (Max 5MB per image)</p>
+                    <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+                </div>
+
+                <!-- Image Preview Container -->
+                <div class="preview-container" id="previewContainer">
+                    <!-- Preview items will be added here dynamically -->
+                </div>
+
+                <!-- Upload Progress -->
+                <div class="upload-progress-container" id="progressContainer" style="display: none;">
+                    <div class="upload-progress-item" id="progressTemplate" style="display: none;">
+                        <div class="progress-info">
+                            <span class="progress-filename"></span>
+                            <span class="progress-percent">0%</span>
                         </div>
-                        <div class="stat">
-                            <h4>98%</h4>
-                            <p>Client Satisfaction</p>
-                        </div>
-                        <div class="stat">
-                            <h4>20+</h4>
-                            <p>Years Experience</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image"></div>
+
+                <!-- Submit Button -->
+                <div class="upload-actions">
+                    <button class="btn-secondary" id="clearBtn" style="display: none;">Clear All</button>
+                    <button class="btn-primary" id="submitBtn" style="display: none;">Upload to WhatsApp</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Form Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-wrapper">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="fullName" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Your Phone Number" required>
-                        </div>
-                        <div class="form-group">
-                            <select id="projectType" required>
-                                <option value="">Select Project Type</option>
-                                <option value="Doors">🚪 Doors</option>
-                                <option value="Windows">🪟 Windows</option>
-                                <option value="Wardrobe">🛁 Wardrobe</option>
-                                <option value="Partition">🔲 Partition</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Tell us about your project" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Send via WhatsApp</button>
-                    </form>
+            <h2>Get in Touch</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required>
                 </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="projectType">Project Type</label>
+                    <select id="projectType" required>
+                        <option value="">Select a project type</option>
+                        <option value="Design">Design</option>
+                        <option value="Fabrication">Fabrication</option>
+                        <option value="Installation">Installation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-                <div class="contact-info">
-                    <div class="info-item">
-                        <h4>📍 Location</h4>
-                        <p>123 Industrial Park<br>Tech City, TC 12345</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>📞 Phone</h4>
-                        <p>+91 9876543210</p>
-                        <p class="whatsapp-note">Direct WhatsApp Available</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>✉️ Email</h4>
-                        <p>info@alumifab.com</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>🕐 Hours</h4>
-                        <p>Mon - Fri: 9 AM - 6 PM<br>Sat: 10 AM - 4 PM</p>
-                    </div>
-                    <div class="info-item whatsapp-direct">
-                        <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-button">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.325 0-2.626.523-3.581 1.466-.955.944-1.487 2.201-1.487 3.527 0 2.738 2.236 4.988 4.99 4.988 1.333 0 2.58-.523 3.526-1.465.946-.942 1.477-2.198 1.477-3.528 0-.016 0-.032 0-.048 0-2.738-2.236-4.988-4.99-4.988"/>
-                            </svg>
-                            Chat on WhatsApp
-                        </a>
-                    </div>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Quality</h3>
+                    <p>Premium quality materials and expert craftsmanship</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Reliability</h3>
+                    <p>On-time delivery and professional service</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Support</h3>
+                    <p>24/7 customer support and after-sales service</p>
                 </div>
             </div>
         </div>
@@ -317,16 +189,8 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 AlumiFab. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">Facebook</a>
-            </div>
         </div>
     </footer>
-
-    <!-- Toast Notification -->
-    <div class="toast" id="toast"></div>
 
     <script src="script.js"></script>
 </body>
