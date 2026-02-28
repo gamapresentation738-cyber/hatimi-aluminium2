@@ -1,4 +1,16 @@
-* {
+let translations;
+
+fetch('translations.json')
+  .then(response => response.json())
+  .then(data => {
+    translations = data;
+    setLanguage('en'); // default
+  });
+
+function setLanguage(lang) {
+  document.getElementById('title').innerText = translations[lang].title;
+  document.getElementById('description').innerText = translations[lang].description;
+}* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
