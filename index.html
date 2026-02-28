@@ -8,12 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="title"></h1>
-<p id="description"></p>
-<button onclick="setLanguage('en')">English</button>
-<button onclick="setLanguage('fr')">hindi</button>
-
-<script src="script.js"></script>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -26,21 +20,25 @@
                 <span>AlumiFab</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-en="Home" data-hi="होम">Home</a></li>
+                <li><a href="#services" data-en="Services" data-hi="सेवाएं">Services</a></li>
+                <li><a href="#gallery" data-en="Gallery" data-hi="गैलरी">Gallery</a></li>
+                <li><a href="#about" data-en="About" data-hi="के बारे में">About</a></li>
+                <li><a href="#contact" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
             </ul>
+            <!-- Language Toggle Button -->
+            <div class="language-toggle">
+                <button class="lang-btn" id="langBtn" data-en="हिंदी" data-hi="English">हिंदी</button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Premium Aluminum <span class="gradient-text">Fabrication Solutions</span></h1>
-            <p class="hero-subtitle">Crafting excellence with precision engineering and modern design</p>
-            <button class="cta-button">Get Started</button>
+            <h1 class="hero-title" data-en="Premium Aluminum Fabrication Solutions" data-hi="प्रीमियम एल्यूमीनियम निर्माण समाधान"><span class="gradient-text" data-en="Fabrication Solutions" data-hi="निर्माण समाधान">Fabrication Solutions</span></h1>
+            <p class="hero-subtitle" data-en="Crafting excellence with precision engineering and modern design" data-hi="सटीक इंजीनियरिंग और आधुनिक डिजाइन के साथ उत्कृष्टता तैयार करना">Crafting excellence with precision engineering and modern design</p>
+            <button class="cta-button" data-en="Get Started" data-hi="शुरुआत करें">Get Started</button>
         </div>
         <div class="hero-animation">
             <div class="floating-shape shape-1"></div>
@@ -52,7 +50,7 @@
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
+            <h2 class="section-title" data-en="Why Choose Us" data-hi="हमें क्यों चुनें">Why Choose Us</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -61,8 +59,8 @@
                             <path d="M18 24L22 28L30 20" stroke="#A0826D" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3>Quality Assured</h3>
-                    <p>ISO certified processes with rigorous quality control at every stage</p>
+                    <h3 data-en="Quality Assured" data-hi="गुणवत्ता आश्वस्त">Quality Assured</h3>
+                    <p data-en="ISO certified processes with rigorous quality control at every stage" data-hi="प्रत्येक चरण में आईएसओ प्रमाणित प्रक्रियाएं और कठोर गुणवत्ता नियंत्रण">ISO certified processes with rigorous quality control at every stage</p>
                 </div>
 
                 <div class="feature-card">
@@ -72,8 +70,8 @@
                             <path d="M12 12V8M36 12V8" stroke="#A0826D" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3>Fast Delivery</h3>
-                    <p>Quick turnaround times without compromising on quality standards</p>
+                    <h3 data-en="Fast Delivery" data-hi="तेजी से डिलीवरी">Fast Delivery</h3>
+                    <p data-en="Quick turnaround times without compromising on quality standards" data-hi="गुणवत्ता मानकों को प्रभावित किए बिना तेजी से टर्नअराउंड समय">Quick turnaround times without compromising on quality standards</p>
                 </div>
 
                 <div class="feature-card">
@@ -83,8 +81,8 @@
                             <path d="M24 14V24L30 30" stroke="#A0826D" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3>24/7 Support</h3>
-                    <p>Round-the-clock customer support for all your fabrication needs</p>
+                    <h3 data-en="24/7 Support" data-hi="24/7 समर्थन">24/7 Support</h3>
+                    <p data-en="Round-the-clock customer support for all your fabrication needs" data-hi="सभी निर्माण आवश्यकताओं के लिए सप्ताह के सातों दिन ग्राहक सहायता">Round-the-clock customer support for all your fabrication needs</p>
                 </div>
 
                 <div class="feature-card">
@@ -93,8 +91,8 @@
                             <path d="M10 24L18 32L38 12" stroke="#2D5016" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Custom Solutions</h3>
-                    <p>Tailored designs for your unique requirements and specifications</p>
+                    <h3 data-en="Custom Solutions" data-hi="कस्टम समाधान">Custom Solutions</h3>
+                    <p data-en="Tailored designs for your unique requirements and specifications" data-hi="आपकी अद्वितीय आवश्यकताओं और विनिर्देशों के लिए तैयार डिजाइन">Tailored designs for your unique requirements and specifications</p>
                 </div>
             </div>
         </div>
@@ -103,42 +101,42 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
+            <h2 class="section-title" data-en="Our Services" data-hi="हमारी सेवाएं">Our Services</h2>
             <div class="services-grid">
                 <div class="service-item" data-category="cutting">
                     <div class="service-image"></div>
-                    <h3>CNC Cutting</h3>
-                    <p>Precision cutting with advanced CNC machinery for exact dimensions</p>
+                    <h3 data-en="CNC Cutting" data-hi="सीएनसी कटिंग">CNC Cutting</h3>
+                    <p data-en="Precision cutting with advanced CNC machinery for exact dimensions" data-hi="सटीक आयामों के लिए उन्नत सीएनसी मशीनरी के साथ सटीक कटिंग">Precision cutting with advanced CNC machinery for exact dimensions</p>
                 </div>
 
                 <div class="service-item" data-category="welding">
                     <div class="service-image"></div>
-                    <h3>Welding & Joining</h3>
-                    <p>Expert welding techniques for strong and durable connections</p>
+                    <h3 data-en="Welding & Joining" data-hi="वेल्डिंग और जुड़ाई">Welding & Joining</h3>
+                    <p data-en="Expert welding techniques for strong and durable connections" data-hi="मजबूत और टिकाऊ कनेक्शन के लिए विशेषज्ञ वेल्डिंग तकनीकें">Expert welding techniques for strong and durable connections</p>
                 </div>
 
                 <div class="service-item" data-category="forming">
                     <div class="service-image"></div>
-                    <h3>Metal Forming</h3>
-                    <p>Complex forming operations for intricate designs and shapes</p>
+                    <h3 data-en="Metal Forming" data-hi="धातु गठन">Metal Forming</h3>
+                    <p data-en="Complex forming operations for intricate designs and shapes" data-hi="जटिल डिजाइन और आकार के लिए जटिल गठन संचालन">Complex forming operations for intricate designs and shapes</p>
                 </div>
 
                 <div class="service-item" data-category="finishing">
                     <div class="service-image"></div>
-                    <h3>Finishing</h3>
-                    <p>Anodizing, powder coating, and polishing for perfect surfaces</p>
+                    <h3 data-en="Finishing" data-hi="फिनिशिंग">Finishing</h3>
+                    <p data-en="Anodizing, powder coating, and polishing for perfect surfaces" data-hi="पूर्ण सतहों के लिए एनोडाइजिंग, पाउडर कोटिंग, और पॉलिशिंग">Anodizing, powder coating, and polishing for perfect surfaces</p>
                 </div>
 
                 <div class="service-item" data-category="assembly">
                     <div class="service-image"></div>
-                    <h3>Assembly</h3>
-                    <p>Complete assembly services with quality control verification</p>
+                    <h3 data-en="Assembly" data-hi="विधानसभा">Assembly</h3>
+                    <p data-en="Complete assembly services with quality control verification" data-hi="गुणवत्ता नियंत्रण सत्यापन के साथ संपूर्ण विधानसभा सेवाएं">Complete assembly services with quality control verification</p>
                 </div>
 
                 <div class="service-item" data-category="design">
                     <div class="service-image"></div>
-                    <h3>Design Consultation</h3>
-                    <p>Expert design guidance to optimize your project specifications</p>
+                    <h3 data-en="Design Consultation" data-hi="डिजाइन परामर्श">Design Consultation</h3>
+                    <p data-en="Expert design guidance to optimize your project specifications" data-hi="आपकी परियोजना विनिर्देशों को अनुकूलित करने के लिए विशेषज्ञ डिजाइन मार्गदर्शन">Expert design guidance to optimize your project specifications</p>
                 </div>
             </div>
         </div>
@@ -147,15 +145,15 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">Our Work Gallery</h2>
+            <h2 class="section-title" data-en="Our Work Gallery" data-hi="हमारी कार्य गैलरी">Our Work Gallery</h2>
             
             <!-- Gallery Filter -->
             <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="doors">Doors</button>
-                <button class="filter-btn" data-filter="windows">Windows</button>
-                <button class="filter-btn" data-filter="wardrobe">Wardrobe</button>
-                <button class="filter-btn" data-filter="partition">Partitions</button>
+                <button class="filter-btn active" data-filter="all" data-en="All" data-hi="सभी">All</button>
+                <button class="filter-btn" data-filter="doors" data-en="Doors" data-hi="दरवाजे">Doors</button>
+                <button class="filter-btn" data-filter="windows" data-en="Windows" data-hi="खिड़कियाँ">Windows</button>
+                <button class="filter-btn" data-filter="wardrobe" data-en="Wardrobe" data-hi="अलमारी">Wardrobe</button>
+                <button class="filter-btn" data-filter="partition" data-en="Partitions" data-hi="विभाजन">Partitions</button>
             </div>
 
             <!-- Gallery Grid -->
@@ -166,8 +164,8 @@
                         <div style="background: linear-gradient(135deg, #6B5D52, #3A3430); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Modern Aluminum Doors</h4>
-                        <p>Contemporary sliding door system</p>
+                        <h4 data-en="Modern Aluminum Doors" data-hi="आधुनिक एल्यूमीनियम दरवाजे">Modern Aluminum Doors</h4>
+                        <p data-en="Contemporary sliding door system" data-hi="समकालीन स्लाइडिंग दरवाजा प्रणाली">Contemporary sliding door system</p>
                     </div>
                 </div>
 
@@ -176,8 +174,8 @@
                         <div style="background: linear-gradient(135deg, #8B7B6F, #4A4440); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Entry Door Systems</h4>
-                        <p>Premium entrance door solutions</p>
+                        <h4 data-en="Entry Door Systems" data-hi="प्रवेश द्वार प्रणाली">Entry Door Systems</h4>
+                        <p data-en="Premium entrance door solutions" data-hi="प्रीमियम प्रवेश द्वार समाधान">Premium entrance door solutions</p>
                     </div>
                 </div>
 
@@ -186,8 +184,8 @@
                         <div style="background: linear-gradient(135deg, #7A6B5F, #3D3935); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Glass Aluminum Doors</h4>
-                        <p>Elegant glass and aluminum combination</p>
+                        <h4 data-en="Glass Aluminum Doors" data-hi="ग्लास एल्यूमीनियम दरवाजे">Glass Aluminum Doors</h4>
+                        <p data-en="Elegant glass and aluminum combination" data-hi="सुरुचिपूर्ण कांच और एल्यूमीनियम संयोजन">Elegant glass and aluminum combination</p>
                     </div>
                 </div>
 
@@ -197,8 +195,8 @@
                         <div style="background: linear-gradient(135deg, #6B8A5A, #2D5016); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Casement Windows</h4>
-                        <p>Quality hinged window systems</p>
+                        <h4 data-en="Casement Windows" data-hi="हिंज वाली खिड़कियाँ">Casement Windows</h4>
+                        <p data-en="Quality hinged window systems" data-hi="गुणवत्ता हिंज वाली खिड़की प्रणाली">Quality hinged window systems</p>
                     </div>
                 </div>
 
@@ -207,8 +205,8 @@
                         <div style="background: linear-gradient(135deg, #5A8C4E, #1F3A0B); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Sliding Windows</h4>
-                        <p>Smooth and modern sliding systems</p>
+                        <h4 data-en="Sliding Windows" data-hi="स्लाइडिंग खिड़कियाँ">Sliding Windows</h4>
+                        <p data-en="Smooth and modern sliding systems" data-hi="चिकनी और आधुनिक स्लाइडिंग प्रणाली">Smooth and modern sliding systems</p>
                     </div>
                 </div>
 
@@ -217,8 +215,8 @@
                         <div style="background: linear-gradient(135deg, #7A9A6A, #3A5B2A); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Thermal Windows</h4>
-                        <p>Energy-efficient window solutions</p>
+                        <h4 data-en="Thermal Windows" data-hi="तापीय खिड़कियाँ">Thermal Windows</h4>
+                        <p data-en="Energy-efficient window solutions" data-hi="ऊर्जा-कुशल खिड़की समाधान">Energy-efficient window solutions</p>
                     </div>
                 </div>
 
@@ -228,8 +226,8 @@
                         <div style="background: linear-gradient(135deg, #A0826D, #6B5D52); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Sliding Wardrobe</h4>
-                        <p>Space-saving sliding door wardrobe</p>
+                        <h4 data-en="Sliding Wardrobe" data-hi="स्ल���इडिंग अलमारी">Sliding Wardrobe</h4>
+                        <p data-en="Space-saving sliding door wardrobe" data-hi="स्थान बचाने वाली स्लाइडिंग दरवाजा अलमारी">Space-saving sliding door wardrobe</p>
                     </div>
                 </div>
 
@@ -238,8 +236,8 @@
                         <div style="background: linear-gradient(135deg, #B5956B, #7A6B5F); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Custom Wardrobe Design</h4>
-                        <p>Tailored closet organization systems</p>
+                        <h4 data-en="Custom Wardrobe Design" data-hi="कस्टम अलमारी डिजाइन">Custom Wardrobe Design</h4>
+                        <p data-en="Tailored closet organization systems" data-hi="तैयार कपड़े संगठन प्रणाली">Tailored closet organization systems</p>
                     </div>
                 </div>
 
@@ -248,8 +246,8 @@
                         <div style="background: linear-gradient(135deg, #9B7F6F, #5A4F48); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Walk-in Wardrobe</h4>
-                        <p>Premium walk-in closet solutions</p>
+                        <h4 data-en="Walk-in Wardrobe" data-hi="वॉक-इन अलमारी">Walk-in Wardrobe</h4>
+                        <p data-en="Premium walk-in closet solutions" data-hi="प्रीमियम वॉक-इन कोठरी समाधान">Premium walk-in closet solutions</p>
                     </div>
                 </div>
 
@@ -259,8 +257,8 @@
                         <div style="background: linear-gradient(135deg, #6B8A5A, #2D5016); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Office Partitions</h4>
-                        <p>Professional office divider systems</p>
+                        <h4 data-en="Office Partitions" data-hi="कार्यालय विभाजन">Office Partitions</h4>
+                        <p data-en="Professional office divider systems" data-hi="पेशेदार कार्यालय विभाजक प्रणाली">Professional office divider systems</p>
                     </div>
                 </div>
 
@@ -269,8 +267,8 @@
                         <div style="background: linear-gradient(135deg, #5A8C4E, #1F3A0B); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Glass Partitions</h4>
-                        <p>Modern glass partition systems</p>
+                        <h4 data-en="Glass Partitions" data-hi="कांच विभाजन">Glass Partitions</h4>
+                        <p data-en="Modern glass partition systems" data-hi="आधुनिक कांच विभाजन प्रणाली">Modern glass partition systems</p>
                     </div>
                 </div>
 
@@ -279,8 +277,8 @@
                         <div style="background: linear-gradient(135deg, #7A9A6A, #3A5B2A); width: 100%; height: 100%;"></div>
                     </div>
                     <div class="gallery-overlay">
-                        <h4>Room Dividers</h4>
-                        <p>Flexible space division solutions</p>
+                        <h4 data-en="Room Dividers" data-hi="कमरे के विभाजक">Room Dividers</h4>
+                        <p data-en="Flexible space division solutions" data-hi="लचीली जगह विभाजन समाधान">Flexible space division solutions</p>
                     </div>
                 </div>
             </div>
@@ -292,21 +290,21 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About AlumiFab</h2>
-                    <p>With over 20 years of experience in aluminum fabrication, we have established ourselves as industry leaders in precision engineering and innovative solutions.</p>
-                    <p>Our state-of-the-art facility and skilled team ensure that every project meets the highest standards of quality and craftsmanship.</p>
+                    <h2 data-en="About AlumiFab" data-hi="अलुमिफैब के बारे में">About AlumiFab</h2>
+                    <p data-en="With over 20 years of experience in aluminum fabrication, we have established ourselves as industry leaders in precision engineering and innovative solutions." data-hi="एल्यूमीनियम निर्माण में 20 साल के अनुभव के साथ, हमने सटीक इंजीनियरिंग और अभिनव समाधान में उद्योग नेता के रूप में खुद को स्थापित किया है।">With over 20 years of experience in aluminum fabrication, we have established ourselves as industry leaders in precision engineering and innovative solutions.</p>
+                    <p data-en="Our state-of-the-art facility and skilled team ensure that every project meets the highest standards of quality and craftsmanship." data-hi="हमारी अत्याधुनिक सुविधा और कुशल टीम सुनिश्चित करती है कि प्रत्येक परियोजना गुणवत्ता और कारीगरी के सर्वोच्च मानकों को पूरा करे।">Our state-of-the-art facility and skilled team ensure that every project meets the highest standards of quality and craftsmanship.</p>
                     <div class="stats">
                         <div class="stat">
-                            <h4>500+</h4>
-                            <p>Projects Completed</p>
+                            <h4 data-en="500+" data-hi="500+">500+</h4>
+                            <p data-en="Projects Completed" data-hi="पूरी की गई परियोजनाएं">Projects Completed</p>
                         </div>
                         <div class="stat">
-                            <h4>98%</h4>
-                            <p>Client Satisfaction</p>
+                            <h4 data-en="98%" data-hi="98%">98%</h4>
+                            <p data-en="Client Satisfaction" data-hi="ग्राहक संतुष्टि">Client Satisfaction</p>
                         </div>
                         <div class="stat">
-                            <h4>20+</h4>
-                            <p>Years Experience</p>
+                            <h4 data-en="20+" data-hi="20+">20+</h4>
+                            <p data-en="Years Experience" data-hi="वर्षों का अनुभव">Years Experience</p>
                         </div>
                     </div>
                 </div>
@@ -318,60 +316,60 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title" data-en="Get In Touch" data-hi="संपर्क में रहें">Get In Touch</h2>
             <div class="contact-wrapper">
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="fullName" placeholder="Your Name" required>
+                            <input type="text" id="fullName" placeholder="Your Name" data-en="Your Name" data-hi="आपका नाम" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
+                            <input type="email" id="email" placeholder="Your Email" data-en="Your Email" data-hi="आपका ईमेल" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                            <input type="tel" id="phone" placeholder="Your Phone Number" data-en="Your Phone Number" data-hi="आपका फोन नंबर" required>
                         </div>
                         <div class="form-group">
                             <select id="projectType" required>
-                                <option value="">Select Project Type</option>
-                                <option value="Doors">Doors</option>
-                                <option value="Windows">Windows</option>
-                                <option value="Wardrobe">Wardrobe</option>
-                                <option value="Partition">Partition</option>
-                                <option value="Other">Other</option>
+                                <option value="" data-en="Select Project Type" data-hi="परियोजना प्रकार चुनें">Select Project Type</option>
+                                <option value="Doors" data-en="Doors" data-hi="दरवाजे">Doors</option>
+                                <option value="Windows" data-en="Windows" data-hi="खिड़कियाँ">Windows</option>
+                                <option value="Wardrobe" data-en="Wardrobe" data-hi="अलमारी">Wardrobe</option>
+                                <option value="Partition" data-en="Partition" data-hi="विभाजन">Partition</option>
+                                <option value="Other" data-en="Other" data-hi="अन्य">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" placeholder="Tell us about your project" rows="5" required></textarea>
+                            <textarea id="message" placeholder="Tell us about your project" data-en="Tell us about your project" data-hi="अपनी परियोजना के बारे में हमें बताएं" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="submit-button">Send via WhatsApp</button>
+                        <button type="submit" class="submit-button" data-en="Send via WhatsApp" data-hi="व्हाट्सएप के जरिए भेजें">Send via WhatsApp</button>
                     </form>
                 </div>
 
                 <div class="contact-info">
                     <div class="info-item">
-                        <h4>📍 Location</h4>
-                        <p>123 Industrial Park<br>Tech City, TC 12345</p>
+                        <h4 data-en="📍 Location" data-hi="📍 स्थान">📍 Location</h4>
+                        <p data-en="123 Industrial Park Tech City, TC 12345" data-hi="123 औद्योगिक पार्क टेक सिटी, टीसी 12345">123 Industrial Park<br>Tech City, TC 12345</p>
                     </div>
                     <div class="info-item">
-                        <h4>📞 Phone</h4>
+                        <h4 data-en="📞 Phone" data-hi="📞 फोन">📞 Phone</h4>
                         <p>+91 9876543210</p>
-                        <p class="whatsapp-note">Direct WhatsApp Available</p>
+                        <p class="whatsapp-note" data-en="Direct WhatsApp Available" data-hi="सीधा व्हाट्सएप उपलब्ध">Direct WhatsApp Available</p>
                     </div>
                     <div class="info-item">
-                        <h4>✉️ Email</h4>
+                        <h4 data-en="✉️ Email" data-hi="✉️ ईमेल">✉️ Email</h4>
                         <p>info@alumifab.com</p>
                     </div>
                     <div class="info-item">
-                        <h4>🕐 Hours</h4>
-                        <p>Mon - Fri: 9 AM - 6 PM<br>Sat: 10 AM - 4 PM</p>
+                        <h4 data-en="🕐 Hours" data-hi="🕐 समय">🕐 Hours</h4>
+                        <p data-en="Mon - Fri: 9 AM - 6 PM Sat: 10 AM - 4 PM" data-hi="सोम - शुक्र: 9 पूर्वाह्न - 6 अपराह्न शनि: 10 पूर्वाह्न - 4 अपराह्न">Mon - Fri: 9 AM - 6 PM<br>Sat: 10 AM - 4 PM</p>
                     </div>
                     <div class="info-item whatsapp-direct">
-                        <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-button">
+                        <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-button" data-en="Chat on WhatsApp" data-hi="व्हाट्सएप पर चैट करें">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.325 0-2.626.523-3.581 1.466-.955.944-1.487 2.201-1.487 3.527 0 2.738 2.236 4.988 4.99 4.988 1.333 0 2.58-.523 3.526-1.465.946-.942 1.477-2.198 1.477-3.528 0-.016 0-.032 0-.048 0-2.738-2.236-4.988-4.99-4.988"/>
                             </svg>
-                            Chat on WhatsApp
+                            <span class="whatsapp-text">Chat on WhatsApp</span>
                         </a>
                     </div>
                 </div>
@@ -382,7 +380,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 AlumiFab. All rights reserved.</p>
+            <p data-en="© 2026 AlumiFab. All rights reserved." data-hi="© 2026 अलुमिफैब। सर्वाधिकार सुरक्षित।">&copy; 2026 AlumiFab. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" class="social-link">LinkedIn</a>
                 <a href="#" class="social-link">Twitter</a>
