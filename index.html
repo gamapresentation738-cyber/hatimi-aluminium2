@@ -8,6 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    .lang-switch{
+      position:absolute;right:28px;top:36px;
+      background:var(--card-bg);
+      border-radius:16px;
+      box-shadow:0 2px 8px #19c2f866;
+      padding:2px 6px;
+      display:flex;align-items:center;gap:8px;
+      font-family:var(--heading-font);
+      z-index:20;
+    }
+    .lang-btn{
+      background:none;border:none;font-size:1.08em;padding:2px 8px;
+      border-radius:12px;cursor:pointer;color:var(--primary);font-family:inherit;font-weight:600;
+      transition:var(--transition);
+    }
+    .lang-btn.active, .lang-btn:hover{background:var(--accent);color:#fff;}
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
